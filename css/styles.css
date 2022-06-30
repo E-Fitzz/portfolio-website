@@ -99,7 +99,7 @@ button:hover, button:focus,
     width: 40%;
     max-height: 100px;
     max-width: fit-content;
-    border-radius: 7%;
+    border-radius: 10px 10px 10px 10px;
     box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.5);
 }
 
