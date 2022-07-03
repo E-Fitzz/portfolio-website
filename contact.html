@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <!--reset browser-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
     
 <body>
@@ -41,33 +41,31 @@
 </header>
 
 <div>
-    <h1>Contact</h1>
-
+    <h1>Contact me</h1>
     <div>
-        <form action="" method="post">
-            <label class="standard-label" for="contact-email">Email: </label>
+        <form method="post">
+            <label class="standard-label" for="first-name">*First name</label>
+            <input type="text" id="first-name" required>
+        <br>
+            <label class="standard-label" for="first-name">*Last name</label>
+            <input type="text" id="last-name" required>
+        <br>
+            <label class="standard-label" for="contact-email">*Email:</label>
             <input type="email" id="contact-email" required>
-        
-            <label class="standard-label" for="contact-tel">Telephone: </label>
+        <br>
+            <label class="standard-label" for="contact-tel">Telephone:</label>
             <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-        
-            <label class="standard-label" for="message">Message: </label>
+        <br>
+            <label class="standard-label" for="message">*Message:</label>
+            <p>(max 240 characters)</p>
             <textarea maxlength="240" id="message" required></textarea>
-        
+        <br>
+        <p>*indicates required field</p>
             <button type="submit" value="Send message">Submit</button>
         </form>
     </div><br>
-
-    <a id="ultralink" href="http://www.ultradead.com/" target="_blank">Check out some of my code</a>
 </div>
-        
-    <div>
-        <br>
-        Eric Fitzgerald<br>
-        United States<br>
-        Tel <a href="tel:+491234567">+1 1234567</a><br>
-        <a href="mailto:fakemail@nowhere.com">fakemail@nowhere.com</a>
-    </div>
+
 
 <!-- Footer with links to social media profiles -->
 <footer class="page-footer">
@@ -79,7 +77,8 @@
 </footer>
 
     
-    <script src="js/tota11y.min.js"></script>
+<script src="js/tota11y.min.js"></script>
+
 
 </body>
 </html>
